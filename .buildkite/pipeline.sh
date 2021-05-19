@@ -8,7 +8,7 @@
 
         echo "tf_plan_changes is ${sizeofplan} bytes in size using GNU option "
 
-        sizeofplan="$(stat -f%s "${file}")"
+        #sizeofplan="$(stat -f%s "${file}")"
 
         echo "tf_plan_changes is ${sizeofplan} bytes in size using BSD option "
 

@@ -44,6 +44,7 @@ function generate_test() {
 
 
 STEP
+}
 
 function generate_test() {
 

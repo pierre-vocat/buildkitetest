@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -eo pipefail
+set -e pipefail
 # The Buildkite pipeline loads this file from the master branch only!
 # Editing this in a branch will not result in the pipeline changing!
 

@@ -46,14 +46,14 @@ function generate_test() {
 STEP
 }
 
-function generate_test() {
+function generate_pipeline() {
 
   cat << EOF
 
 EOF
   echo "steps:"
 
-  generate_build 
+  generate_test
 
   }
 

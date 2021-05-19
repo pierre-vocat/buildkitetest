@@ -1,13 +1,5 @@
 #!/usr/bin/env bash
-set -e pipefail
-# The Buildkite pipeline loads this file from the master branch only!
-# Editing this in a branch will not result in the pipeline changing!
 
-function generate_test() {
- 
-  cat <<STEP
-  - label: ":white_check_mark: Build"
-    command: |
       set -euo pipefail
       file="helloworld.log"
       if [[ -f "${file}" ]]; then
@@ -41,21 +33,3 @@ function generate_test() {
       else
         echo "there is no file"
       fi
-
-
-STEP
-}
-
-function generate_pipeline() {
-
-  cat << EOF
-
-EOF
-  echo "steps:"
-
-  generate_test
-
-  }
-
-
-generate_pipeline

@@ -1,0 +1,4 @@
+steps:
+  - command: .buildkite/pipeline.sh | buildkite-agent pipeline run
+    label: ":pipeline: test"
+  - wait

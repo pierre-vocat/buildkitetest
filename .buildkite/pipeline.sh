@@ -9,7 +9,7 @@ function generate_test() {
   - label: ":white_check_mark: Build"
     command: |
       set -euo pipefail
-      file="big.file"
+      file="helloworld.log"
       if [[ -f "${file}" ]]; then
 
         sizeofplan="$(stat -c%s "${file}")"
